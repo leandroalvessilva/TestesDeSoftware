@@ -13,6 +13,8 @@ namespace Demo.Tests
             //Act
             var result = calculadora.Somar(1, 2);
 
+            //Verifica se o valor retornado do método é igual ao passado na asserção.
+
             //Assert
             Assert.Equal(3, result);
         }
@@ -25,6 +27,8 @@ namespace Demo.Tests
 
             //Act
             var result = calculadora.Somar(1.13123123123, 2.2312313123);
+
+            //Verifica se o valor retornado do método é igual ao passado na asserção.
 
             //Assert
             Assert.NotEqual(3.3, result, 1);

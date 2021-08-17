@@ -13,6 +13,8 @@ namespace Demo.Tests
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
 
+            // Verifica se a string retornada do método é igual a passada na asserção considera camelCase.
+
             //Assert
             Assert.Equal("Leandro Alves", nomeCompleto);
         }
@@ -25,6 +27,8 @@ namespace Demo.Tests
 
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
+
+            // Verifica se a string retornada do método é igual a passada na asserção ignorando camelCase.
 
             //Assert
             Assert.Equal("LEANDRO ALVES", nomeCompleto, true);
@@ -39,6 +43,8 @@ namespace Demo.Tests
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
 
+            //Verifica na string se contém a condição passada.
+
             //Assert
             Assert.Contains("andro", nomeCompleto);
         }
@@ -51,6 +57,8 @@ namespace Demo.Tests
 
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
+
+            //Verifica na string se começa com a condição passada.
 
             //Assert
             Assert.StartsWith("Lea", nomeCompleto);
@@ -65,6 +73,8 @@ namespace Demo.Tests
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
 
+            //Verifica na string se termina com a condição passada.
+
             //Assert
             Assert.EndsWith("ves", nomeCompleto);
         }
@@ -77,6 +87,8 @@ namespace Demo.Tests
 
             //Act
             var nomeCompleto = sut.Unir("Leandro", "Alves");
+
+            //Verifica se a string bate com o regex passado.
 
             //Assert
             Assert.Matches("[A-Z]{1}[a-z]+ [A-Z]{1}[a-z]+", nomeCompleto);

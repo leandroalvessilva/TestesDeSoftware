@@ -10,6 +10,8 @@ namespace Demo.Tests
             //Arrange & Act
             var funcionario = new Funcionario("", 1000);
 
+            //Validação de nulidade retornando true or false
+
             //Assert
             Assert.False(string.IsNullOrEmpty(funcionario.Nome));
         }
@@ -22,6 +24,8 @@ namespace Demo.Tests
 
             //Assert
             Assert.NotNull(funcionario.Nome);
+
+            //Validação de nulidade e validação de tamanho para retornar true or false
 
             //Assert Bool
             Assert.True(string.IsNullOrEmpty(funcionario.Apelido));

@@ -17,6 +17,9 @@ namespace Demo.Tests
             var funcionario = new Funcionario("Leandro", salario);
 
             // Assert
+
+            //Verifica se valor está dentro do range passado.
+
             if (funcionario.NivelProfissional == NivelProfissional.Junior)
                 Assert.InRange(funcionario.Salario, 500, 1999);
 
@@ -25,6 +28,8 @@ namespace Demo.Tests
 
             if (funcionario.NivelProfissional == NivelProfissional.Senior)
                 Assert.InRange(funcionario.Salario, 8000, double.MaxValue);
+
+            //Verifica se valor não está dentro do range passado.
 
             Assert.NotInRange(funcionario.Salario, 0, 499);
         }

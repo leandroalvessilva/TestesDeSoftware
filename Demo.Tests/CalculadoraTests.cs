@@ -16,6 +16,8 @@ namespace Demo.Tests
             //Act 
             var resultado = calculadora.Somar(2, 2);
 
+            //Verifica se o retorno do método é igual ao passado na asserção.
+
             //Assert 
             Assert.Equal(4, resultado);
         }
@@ -32,6 +34,8 @@ namespace Demo.Tests
 
             //Act
             var resultado = calculadora.Somar(v1, v2);
+
+            //Verifica se o retorno do método é igual ao passado na asserção.
 
             //Assert
             Assert.Equal(total, resultado);

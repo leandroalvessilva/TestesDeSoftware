@@ -12,6 +12,8 @@ namespace Demo.Tests
             // Arrange
             var calculadora = new Calculadora();
 
+            // Verificar se uma exception específica é retornado do método.
+
             //Act & Assert
             Assert.Throws<DivideByZeroException>(() => calculadora.Dividir(10, 0));
         }
@@ -21,6 +23,9 @@ namespace Demo.Tests
 
         {
             // Arrange & Act & Assert
+
+            // Verificar se uma exception genérica é retornado do método.
+
             var exception = Assert.Throws<Exception>(() => FuncionarioFactory.Criar("Leandro", 250));
 
             Assert.Equal("Salario inferior ao permitido.", exception.Message);
